@@ -25,24 +25,28 @@
  */
 
 int task01(int a, int b, int c, int d) {
-	int count = 0;
-	int size = 4;
-	int* vector = new int[a, b, c, d];
-
-	for (int j = 0; j < size; j++)
-	{
-		for (int i = 0; i < size; i++)
-		{
-			int first = vector[j];
-			int second = vector[i];
-
-			if (first == second && j != i) {
-				count++;
-			}
-		}
+	if (a > b) {
+	 	swap(a, b);
+	}
+	if (b > c) {
+		swap(c, b);
+	}
+	if (c > d) {
+		swap(c, d);
+	}
+	if (a > b) {
+		swap(a, b);
+	}
+	if (b > c) {
+		swap(c, b);
+	}
+	if (a > b) {
+		swap(a, b);
 	}
 
-	return count;
+	return a == b and b == c and c == d ? 4 :
+		a == b and b == c ? 3 :
+		a == b ? 2 : 0;
 }
 
 
