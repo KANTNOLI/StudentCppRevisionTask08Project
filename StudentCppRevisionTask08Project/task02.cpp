@@ -33,6 +33,7 @@
  */
 
 string task02(int a, int b, int c, int d) {
-
-	return "?";
+	return a == b and b == c and c == d ? "Monotonic arithmetic progression." :
+		d - c == b - a and d - c == c - b and d - c < 0 ? "Descending arithmetic progression." :
+		b - a == d - c and d - c == c - b ? "Ascending arithmetic progression." : "No arithmetic progression.";
 }
