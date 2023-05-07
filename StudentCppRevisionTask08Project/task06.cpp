@@ -27,6 +27,18 @@
  */
 
 int task06(int a, int b, int c) {
+	if (a > b)
+	{
+		swap(a, b); 
+	}
+	if (b > c)
+	{
+		swap(c, b);
+	}
+	if (a > b)
+	{
+		swap(a, b); 
+	}
 
-	return 0;
+	return a == b or b == c or a == c ? 0 : b;
 }
