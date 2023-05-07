@@ -27,5 +27,6 @@
  */
 
 int task06(int a, int b, int c) {
+
 	return 0;
 }
