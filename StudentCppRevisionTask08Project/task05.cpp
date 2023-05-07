@@ -38,5 +38,9 @@
  */
 
 int task05(int month, int year) {
-	return 0;
+	bool flag = year % 4 == 0 and year % 100 > 0 || year % 400 == 0 ? true : false;
+	return month < 1 or month > 12 ? 0 :
+		month == 4 or month == 6 or month == 9 or month == 11 ? 30 :
+		month == 12 or month == 10 or month == 8 or month == 7 or month == 5 or month == 3 or month == 1 ? 31 :
+		month == 2 and flag ? 29 : 28;
 }
