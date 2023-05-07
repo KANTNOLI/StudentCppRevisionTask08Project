@@ -21,9 +21,24 @@
  */
 
 int task03(int a, int b, int c, int d) {
+	if (a > b) {
+		swap(a, b);
+	}
+	if (b > c) {
+		swap(c, b);
+	}
+	if (c > d) {
+		swap(c, d);
+	}
+	if (a > b) {
+		swap(a, b);
+	}
+	if (b > c) {
+		swap(c, b);
+	}
+	if (a > b) {
+		swap(a, b);
+	}
 
-
-
-
-	return 0;
+	return a;
 }
